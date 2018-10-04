@@ -1,0 +1,35 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "Data",
+				"type": "DateTime"
+			},
+			{
+				"name": "Codigo_Local",
+				"type": "Int32"
+			},
+			{
+				"name": "Codigo_Produto",
+				"type": "Int32"
+			},
+			{
+				"name": "Quantidade",
+				"type": "Int32"
+			},
+			{
+				"name": "Preco",
+				"type": "Decimal"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[Vendas]"
+		}
+	}
+}
